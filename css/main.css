@@ -106,18 +106,30 @@ body {
   height: 100%;
 }
 
-h1 {
-  font-size: 5em;
+header,
+footer {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+header {
+  font-size: 4em;
 }
 
-p {
-  font-size: 1.5em;
+main {
+  font-size: 2em;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid #555;
@@ -130,7 +142,7 @@ p {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   line-height: 1.25em;
   color: #d9d9d9;
-  font-size: 1.35rem;
+  font-size: 1.35em;
   height: auto;
   width: 30%;
   display: flex;
@@ -142,6 +154,10 @@ p {
 .div-2 {
   border-left: 1px solid #555;
   border-right: 1px solid #555;
+}
+
+span {
+  font-family: "Lora", sans-serif;
 }
 /* ==========================================================================
    Helper classes
